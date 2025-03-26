@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'; 
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
 import Hero from './components/Hero';
 import Skills from './components/SkillsSection';
 import Profile from './components/ProfileSection';
