@@ -84,6 +84,13 @@
   "location": "İkamet Şehri",
   "education": "Eğitim Durumu",
   "role": "Tercih Ettiği Rol"
+},
+"modal": {
+   "title": "",
+   "namePlaceholder": "",
+   "emailPlaceholder": "",
+   "messagePlaceholder": "",
+   "sendButton": ""
 }
 
 }

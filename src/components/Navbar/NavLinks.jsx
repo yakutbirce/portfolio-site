@@ -1,22 +1,28 @@
 import React from "react";
+import { useModal } from "../../context/ModalContext";
 
-function NavLinks() {
+function NavLinks({ nav }) {
+  const { openModal } = useModal();
+
   return (
-    <div className="flex gap-20 items-center max-md:gap-10 max-sm:hidden">
+    <div className="flex gap-6 items-center max-sm:hidden">
       <a
         href="#skills"
-        className="text-lg font-medium leading-7 text-gray-500 hover:text-indigo-800 transition-colors"
+        className="text-base font-medium text-gray-500 hover:text-indigo-800 transition-colors"
       >
-        Skills
+        {nav?.skills || "Skills"}
       </a>
       <a
         href="#projects"
-        className="text-lg font-medium leading-7 text-gray-500 hover:text-indigo-800 transition-colors"
+        className="text-base font-medium text-gray-500 hover:text-indigo-800 transition-colors"
       >
-        Projects
+        {nav?.projects || "Projects"}
       </a>
-      <button className="px-8 py-3 text-lg font-medium leading-7 text-indigo-800 bg-white rounded-md border border-indigo-800 hover:bg-indigo-50 transition-colors">
-        Hire me
+      <button
+        onClick={openModal}
+        className="px-5 py-1.5 text-sm font-medium text-indigo-800 bg-white border border-indigo-800 rounded-md hover:bg-indigo-50 transition-colors"
+      >
+        {nav?.hireMe || "Hire Me"}
       </button>
     </div>
   );

@@ -84,5 +84,13 @@
   "location": "Location",
   "education": "Education",
   "role": "Preferred Role"
+},
+"modal": {
+   "title": "",
+   "namePlaceholder": "",
+   "emailPlaceholder": "",
+   "messagePlaceholder": "",
+   "sendButton": ""
 }
+
 }
