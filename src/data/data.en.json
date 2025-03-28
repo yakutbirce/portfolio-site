@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Creative thinker, Minimalism lover",
+    "description": "Hi! I'm Birçe. I design user-friendly, aesthetic and effective interfaces.",
+    "buttons": {
+      "cv": "Hire me",
+      "email": "Send Email",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "skills": [
+    {
+      "title": "JavaScript",
+      "description": "Core programming language for interactive browser-based applications."
+    },
+    {
+      "title": "React.js",
+      "description": "A modern JavaScript library for building component-based user interfaces."
+    },
+    {
+      "title": "Node.js",
+      "description": "Environment to build fast and scalable server-side applications using JavaScript."
+    }
+  ],
+  "profile": {
+    "title": "Profile",
+    "infoTitle": "Profile Information",
+    "aboutTitle": "About Me",
+    "birthdate": "24.03.1996",
+    "location": "Ankara",
+    "education": ["Hacettepe Univ. Biology", "Bachelor, 2016"],
+    "role": "Frontend, UI",
+    "aboutMe": [
+      "Hi! I’m Birçe. Thanks to my passion for software, I combined my law career with technology.",
+      "For me, building clean, effective and user-friendly interfaces is not just a job, it’s also an art."
+    ]
+  },
+ "projects": [
+  {
+    "title": "Workintech",
+    "description": "A site documenting my software education journey.",
+    "tags": ["React", "Tailwind", "Responsive"],
+    "image": "https://via.placeholder.com/300x180.png?text=Workintech",
+    "githubLink": "#",
+    "siteLink": "#"
+  },
+  {
+    "title": "Random Jokes",
+    "description": "A mini app that fetches random jokes from an API.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "image": "https://via.placeholder.com/300x180.png?text=Random+Jokes",
+    "githubLink": "#",
+    "siteLink": "#"
+  },
+  {
+    "title": "Todo List",
+    "description": "A simple CRUD-based task management app.",
+    "tags": ["React", "Hooks", "LocalStorage"],
+    "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
+    "githubLink": "#",
+    "siteLink": "#"
+  }
+]
+
+,
+  "footer": {
+    "contact": "Let's create something great together.",
+    "email": "birce@example.com"
+  },
+  "nav": {
+    "skills": "Skills",
+    "projects": "Projects",
+    "hireMe": "Hire me"
+  }
+}

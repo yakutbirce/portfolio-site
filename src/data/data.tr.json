@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": "Yaratıcı düşünen, Minimalizmi seven",
+    "description": "Merhaba! Ben Birçe. Kullanıcı dostu, estetik ve etkili arayüzler geliştiriyorum.",
+    "buttons": {
+      "cv": "İletişim",
+      "email": "Mail Gönder",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "skills": [
+    {
+      "title": "JavaScript",
+      "description": "Tarayıcıda çalışan etkileşimli kodlar için temel programlama dili."
+    },
+    {
+      "title": "React.js",
+      "description": "Bileşen tabanlı kullanıcı arayüzleri oluşturmak için modern bir JavaScript kütüphanesi."
+    },
+    {
+      "title": "Node.js",
+      "description": "Sunucu tarafında JavaScript ile hızlı ve ölçeklenebilir uygulamalar geliştirme ortamı."
+    }
+  ],
+  "profile": {
+    "title": "Profil",
+    "infoTitle": "Profil Bilgileri",
+    "aboutTitle": "Hakkımda",
+    "birthdate": "24.03.1996",
+    "location": "Ankara",
+    "education": ["Hacettepe Ünv. Biyoloji", "Lisans, 2016"],
+    "role": "Frontend, UI",
+    "aboutMe": [
+      "Merhaba! Ben Birçe. Yazılıma olan tutkum sayesinde hukuk kariyerimi teknolojiyle birleştirdim.",
+      "Temiz, etkili ve kullanıcı dostu arayüzler geliştirmek benim için sadece bir iş değil, aynı zamanda bir sanat."
+    ]
+  },
+  "projects": [
+  {
+    "title": "Workintech",
+    "description": "Yazılım eğitimi sürecimi belgelediğim site.",
+    "tags": ["React", "Tailwind", "Responsive"],
+    "image": "https://via.placeholder.com/300x180.png?text=Workintech",
+    "githubLink": "#",
+    "siteLink": "#"
+  },
+  {
+    "title": "Random Jokes",
+    "description": "API'den rastgele espriler çeken mini app.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "image": "https://via.placeholder.com/300x180.png?text=Random+Jokes",
+    "githubLink": "#",
+    "siteLink": "#"
+  },
+  {
+    "title": "Todo List",
+    "description": "Yapılacaklar listesi uygulaması. CRUD işlemleriyle geliştirilmiştir.",
+    "tags": ["React", "Hooks", "LocalStorage"],
+    "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
+    "githubLink": "#",
+    "siteLink": "#"
+  }
+]
+
+
+}
