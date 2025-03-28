@@ -6,6 +6,8 @@ import ProfileSection from "./components/Hero/ProfileSection";
 import Skills from "./components/Skills/Skills"; 
 import ProfilePage from "./components/Profile/ProfilePage";
 import ProjectsSection from "./components/Projects/ProjectsSection";
+import ContactSection from "./components/Footer/ContactSection";
+
 
 function App() {
   const { language } = useLanguage();
@@ -31,7 +33,7 @@ function App() {
       
       {/* Sabit Header Alanı (toggle + navbar) */}
       <div className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-sm px-32 py-4 flex flex-col gap-4">
-        <div className="flex justify-end">
+        <div className="flex justify-end mr-8">
           <DarkModeLanguageToggle />
         </div>
         <Navbar navData={data} />
@@ -43,6 +45,7 @@ function App() {
         <Skills data={data.skills} /> 
         <ProfilePage data={data} />
         <ProjectsSection data={data} />
+        <ContactSection />
       </div>
     </div>
   );

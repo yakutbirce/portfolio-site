@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 
 function DarkModeLanguageToggle() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { language, toggleLanguage } = useLanguage();
+
+  // Sayfa ilk yüklendiğinde dark mod açık mı kontrol et
+  useEffect(() => {
+    setIsDarkMode(document.documentElement.classList.contains("dark"));
+  }, []);
+
+  // Dark mode toggle fonksiyonu
   const toggleDarkMode = () => {
     document.documentElement.classList.toggle("dark");
+    setIsDarkMode(!isDarkMode);
   };
-
-  const { language, toggleLanguage } = useLanguage();
 
   return (
     <div className="flex items-center gap-4">
@@ -16,7 +24,7 @@ function DarkModeLanguageToggle() {
         className="px-3 py-1 bg-indigo-100 dark:bg-indigo-800 text-indigo-800 dark:text-white rounded-full text-sm font-medium flex items-center gap-1 cursor-pointer"
       >
         <span role="img" aria-label="moon">🌙</span>
-        DARK MODE
+        {isDarkMode ? "LIGHT MODE" : "DARK MODE"}
       </button>
 
       {/* DİKEY ÇİZGİ */}
