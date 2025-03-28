@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import { useModal } from "../../context/ModalContext";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { useLanguage } from "../../context/LanguageContext";
+import trData from "../../data/data.tr.json";
+import enData from "../../data/data.en.json";
 import { useNavigate } from "react-router-dom";
-import { useLanguage } from "../../context/LanguageContext"; // 💜 dil bilgisi için eklendi
 
 function ContactModal() {
   const { isModalOpen, closeModal } = useModal();
   const navigate = useNavigate();
-  const { language } = useLanguage(); // 💜 dili alıyoruz
+  const { language } = useLanguage();
+  const dictionary = language === "tr" ? trData : enData;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -22,13 +25,13 @@ function ContactModal() {
 
   const validate = () => {
     const newErrors = {};
-    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.name.trim()) newErrors.name = dictionary.contactModal.errors.name;
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
+      newErrors.email = dictionary.contactModal.errors.emailRequired;
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Invalid email format";
+      newErrors.email = dictionary.contactModal.errors.emailInvalid;
     }
-    if (!formData.message.trim()) newErrors.message = "Message is required";
+    if (!formData.message.trim()) newErrors.message = dictionary.contactModal.errors.message;
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -38,12 +41,7 @@ function ContactModal() {
     e.preventDefault();
     if (!validate()) return;
 
-    // 🟣 Dile göre toast
-    if(language === "tr"){
-      toast.success("Mesaj başarıyla gönderildi! 🚀");
-    } else {
-      toast.success("Message sent successfully! 🚀");
-    }
+    toast.success(dictionary.contactModal.success);
 
     setFormData({ name: "", email: "", message: "" });
 
@@ -71,45 +69,45 @@ function ContactModal() {
         </button>
 
         <h2 className="text-3xl font-bold mb-6 text-center text-indigo-700 dark:text-indigo-400 tracking-tight">
-          Get in Touch
+          {dictionary.contactModal.title}
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
 
           <div className="flex flex-col gap-1">
-            <label htmlFor="name" className="text-sm font-medium">Name</label>
+            <label htmlFor="name" className="text-sm font-medium">{dictionary.contactModal.labels.name}</label>
             <input
               type="text"
               id="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Enter your name"
+              placeholder={dictionary.contactModal.placeholders.name}
               className={`p-3 border rounded-lg bg-white dark:bg-gray-800 ${errors.name && 'border-red-500'}`}
             />
             {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
           </div>
 
           <div className="flex flex-col gap-1">
-            <label htmlFor="email" className="text-sm font-medium">Email</label>
+            <label htmlFor="email" className="text-sm font-medium">{dictionary.contactModal.labels.email}</label>
             <input
               type="email"
               id="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="your@email.com"
+              placeholder={dictionary.contactModal.placeholders.email}
               className={`p-3 border rounded-lg bg-white dark:bg-gray-800 ${errors.email && 'border-red-500'}`}
             />
             {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
 
           <div className="flex flex-col gap-1">
-            <label htmlFor="message" className="text-sm font-medium">Message</label>
+            <label htmlFor="message" className="text-sm font-medium">{dictionary.contactModal.labels.message}</label>
             <textarea
               id="message"
               rows="4"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Type your message..."
+              placeholder={dictionary.contactModal.placeholders.message}
               className={`p-3 border rounded-lg bg-white dark:bg-gray-800 resize-none ${errors.message && 'border-red-500'}`}
             />
             {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
@@ -119,7 +117,7 @@ function ContactModal() {
             type="submit"
             className="w-full py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all font-medium"
           >
-            Send Message
+            {dictionary.contactModal.send}
           </button>
 
         </form>

@@ -9,7 +9,10 @@ const Skills = ({ data }) => {
   const dictionary = language === "tr" ? trData : enData;
 
   return (
-    <section className="px-32 pt-20 pb-16 w-full max-md:px-16 max-md:pt-12 max-md:pb-12 max-sm:px-5 max-sm:pt-8 max-sm:pb-10">
+    <section
+  id="skills"
+  className="scroll-mt-24 px-32 pt-20 pb-16 w-full max-md:px-16 max-md:pt-12 max-md:pb-12 max-sm:px-5 max-sm:pt-8 max-sm:pb-10"
+>
 
       <h2 className="mb-20 text-5xl font-semibold leading-10 text-gray-800 dark:text-white max-md:mb-12 max-md:text-4xl max-sm:text-3xl">
         {dictionary.sections.skills}

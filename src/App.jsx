@@ -10,8 +10,9 @@ import ContactSection from "./components/Footer/ContactSection";
 import HeaderActions from "./components/Header/HeaderActions";
 import ContactModal from "./components/Modals/ContactModal"; 
 import { ModalProvider } from "./context/ModalContext"; 
-import Thanks from "./pages/Thanks"; // ✅ thanks sayfası eklendi
+import Thanks from "./pages/Thanks"; 
 import { BrowserRouter as Router } from "react-router-dom";
+import ScrollllToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   const { language } = useLanguage();
@@ -56,6 +57,7 @@ function App() {
               </div>
 
               <ContactModal />
+              <ScrollllToTopButton />
             </div>
           } />
 

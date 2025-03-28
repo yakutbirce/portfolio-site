@@ -26,9 +26,9 @@
     "title": "Profile",
     "infoTitle": "Profile Information",
     "aboutTitle": "About Me",
-    "birthdate": "24.03.1996",
-    "location": "Ankara",
-    "education": ["Hacettepe Univ. Biology", "Bachelor, 2016"],
+    "birthdate": "04.08.1997",
+    "location": "Diyarbakir",
+    "education": ["Yalova University Faculty of Law", "Bachelor, 2020"],
     "role": "Frontend, UI",
     "aboutMe": [
       "Hi! I’m Birçe. Thanks to my passion for software, I combined my law career with technology.",
@@ -49,6 +49,14 @@
       "description": "A mini app that fetches random jokes from an API.",
       "tags": ["HTML", "CSS", "JavaScript"],
       "image": "https://via.placeholder.com/300x180.png?text=Random+Jokes",
+      "githubLink": "#",
+      "siteLink": "#"
+    },
+    {
+      "title": "Todo List",
+      "description": "A simple CRUD-based task management app.",
+      "tags": ["React", "Hooks", "LocalStorage"],
+      "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
       "githubLink": "#",
       "siteLink": "#"
     },
@@ -91,6 +99,32 @@
    "emailPlaceholder": "",
    "messagePlaceholder": "",
    "sendButton": ""
+},
+"thanksPage": {
+  "title": "Thanks!",
+  "message": "Your message has been successfully sent. I will get back to you as soon as possible.",
+  "button": "Go back to Homepage"
+},
+"contactModal": {
+  "title": "Get in Touch",
+  "labels": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  },
+  "placeholders": {
+    "name": "Enter your name",
+    "email": "your@email.com",
+    "message": "Type your message..."
+  },
+  "errors": {
+    "name": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "message": "Message is required"
+  },
+  "send": "Send Message",
+  "success": "Message sent successfully! 🚀"
 }
 
 }

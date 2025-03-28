@@ -26,9 +26,9 @@
     "title": "Profil",
     "infoTitle": "Profil Bilgileri",
     "aboutTitle": "Hakkımda",
-    "birthdate": "24.03.1996",
-    "location": "Ankara",
-    "education": ["Hacettepe Ünv. Biyoloji", "Lisans, 2016"],
+    "birthdate": "04.08.1997",
+    "location": "Diyarbakır",
+    "education": ["Yalova Üniversitesi Hukuk Fakültesi", "Lisans, 2020"],
     "role": "Frontend, UI",
     "aboutMe": [
       "Merhaba! Ben Birçe. Yazılıma olan tutkum sayesinde hukuk kariyerimi teknolojiyle birleştirdim.",
@@ -91,6 +91,32 @@
    "emailPlaceholder": "",
    "messagePlaceholder": "",
    "sendButton": ""
+},
+"thanksPage": {
+  "title": "Teşekkürler!",
+  "message": "Mesajınız başarıyla iletildi. En kısa sürede dönüş yapacağım.",
+  "button": "Anasayfaya Dön"
+},
+"contactModal": {
+  "title": "Benimle İletişime Geç",
+  "labels": {
+    "name": "İsim",
+    "email": "E-posta",
+    "message": "Mesaj"
+  },
+  "placeholders": {
+    "name": "Adınızı girin",
+    "email": "eposta@ornek.com",
+    "message": "Mesajınızı yazın..."
+  },
+  "errors": {
+    "name": "İsim gerekli",
+    "emailRequired": "E-posta gerekli",
+    "emailInvalid": "Geçerli bir e-posta girin",
+    "message": "Mesaj gerekli"
+  },
+  "send": "Gönder",
+  "success": "Mesaj başarıyla gönderildi! 🚀"
 }
 
 }
