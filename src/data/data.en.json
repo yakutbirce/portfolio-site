@@ -35,41 +35,54 @@
       "For me, building clean, effective and user-friendly interfaces is not just a job, it’s also an art."
     ]
   },
- "projects": [
-  {
-    "title": "Workintech",
-    "description": "A site documenting my software education journey.",
-    "tags": ["React", "Tailwind", "Responsive"],
-    "image": "https://via.placeholder.com/300x180.png?text=Workintech",
-    "githubLink": "#",
-    "siteLink": "#"
-  },
-  {
-    "title": "Random Jokes",
-    "description": "A mini app that fetches random jokes from an API.",
-    "tags": ["HTML", "CSS", "JavaScript"],
-    "image": "https://via.placeholder.com/300x180.png?text=Random+Jokes",
-    "githubLink": "#",
-    "siteLink": "#"
-  },
-  {
-    "title": "Todo List",
-    "description": "A simple CRUD-based task management app.",
-    "tags": ["React", "Hooks", "LocalStorage"],
-    "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
-    "githubLink": "#",
-    "siteLink": "#"
-  }
-]
-
-,
+  "projects": [
+    {
+      "title": "Workintech",
+      "description": "A site documenting my software education journey.",
+      "tags": ["React", "Tailwind", "Responsive"],
+      "image": "https://via.placeholder.com/300x180.png?text=Workintech",
+      "githubLink": "#",
+      "siteLink": "#"
+    },
+    {
+      "title": "Random Jokes",
+      "description": "A mini app that fetches random jokes from an API.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "image": "https://via.placeholder.com/300x180.png?text=Random+Jokes",
+      "githubLink": "#",
+      "siteLink": "#"
+    },
+    {
+      "title": "Todo List",
+      "description": "A simple CRUD-based task management app.",
+      "tags": ["React", "Hooks", "LocalStorage"],
+      "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
+      "githubLink": "#",
+      "siteLink": "#"
+    }
+  ],
   "footer": {
-    "contact": "Let's create something great together.",
+    "contact": "Let's work together on your next product.",
     "email": "birce@example.com"
   },
   "nav": {
     "skills": "Skills",
     "projects": "Projects",
-    "hireMe": "Hire me"
-  }
+    "hireMe": "Hire Me"
+  },
+  "toggle": {
+    "dark": "Dark Mode",
+    "light": "Light Mode"
+  },
+  "sections": {
+    "skills": "Skills",
+    "profile": "Profile",
+    "projects": "Projects"
+  },
+  "profileLabels": {
+  "birthdate": "Date of Birth",
+  "location": "Location",
+  "education": "Education",
+  "role": "Preferred Role"
+}
 }

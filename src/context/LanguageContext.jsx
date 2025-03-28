@@ -10,7 +10,7 @@ export function LanguageProvider({ children }) {
   const toggleLanguage = () => {
     const newLang = language === "tr" ? "en" : "tr";
     setLanguage(newLang);
-    localStorage.setItem("lang", newLang); // ✅ Doğru olan bu!
+    localStorage.setItem("lang", newLang); 
   };
   
 

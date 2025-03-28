@@ -36,31 +36,54 @@
     ]
   },
   "projects": [
-  {
-    "title": "Workintech",
-    "description": "Yazılım eğitimi sürecimi belgelediğim site.",
-    "tags": ["React", "Tailwind", "Responsive"],
-    "image": "https://via.placeholder.com/300x180.png?text=Workintech",
-    "githubLink": "#",
-    "siteLink": "#"
+    {
+      "title": "Workintech",
+      "description": "Yazılım eğitimi sürecimi belgelediğim site.",
+      "tags": ["React", "Tailwind", "Responsive"],
+      "image": "https://via.placeholder.com/300x180.png?text=Workintech",
+      "githubLink": "#",
+      "siteLink": "#"
+    },
+    {
+      "title": "Random Jokes",
+      "description": "API'den rastgele espriler çeken mini app.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "image": "https://via.placeholder.com/300x180.png?text=Random+Jokes",
+      "githubLink": "#",
+      "siteLink": "#"
+    },
+    {
+      "title": "Todo List",
+      "description": "Yapılacaklar listesi uygulaması. CRUD işlemleriyle geliştirilmiştir.",
+      "tags": ["React", "Hooks", "LocalStorage"],
+      "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
+      "githubLink": "#",
+      "siteLink": "#"
+    }
+  ],
+  "nav": {
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "hireMe": "İletişim"
   },
-  {
-    "title": "Random Jokes",
-    "description": "API'den rastgele espriler çeken mini app.",
-    "tags": ["HTML", "CSS", "JavaScript"],
-    "image": "https://via.placeholder.com/300x180.png?text=Random+Jokes",
-    "githubLink": "#",
-    "siteLink": "#"
+  "toggle": {
+    "dark": "Karanlık Mod",
+    "light": "Aydınlık Mod"
   },
-  {
-    "title": "Todo List",
-    "description": "Yapılacaklar listesi uygulaması. CRUD işlemleriyle geliştirilmiştir.",
-    "tags": ["React", "Hooks", "LocalStorage"],
-    "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
-    "githubLink": "#",
-    "siteLink": "#"
-  }
-]
-
+  "sections": {
+    "skills": "Yetenekler",
+    "profile": "Profil",
+    "projects": "Projeler"
+  },
+  "footer": {
+    "contact": "Benimle iletişime geçin.",
+    "email": "birce@example.com"
+  },
+  "profileLabels": {
+  "birthdate": "Doğum Tarihi",
+  "location": "İkamet Şehri",
+  "education": "Eğitim Durumu",
+  "role": "Tercih Ettiği Rol"
+}
 
 }
