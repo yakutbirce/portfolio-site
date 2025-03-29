@@ -12,7 +12,7 @@ function GeminiChatbot() {
   const messagesEndRef = useRef(null);
   const { language } = useLanguage();
 
-  // 💬 Başlangıç mesajı
+  // Başlangıç mesajı
   const introMessage = language === "tr"
   ? "Merhaba! Ben frontend ve backend web geliştirme konularında yardımcı olan bir yapay zeka asistanıyım. Sor bakalım ne merak ediyorsun? 💻"
   : "Hi! I'm an AI assistant focused on frontend and backend web development. What would you like to ask? 💻";
