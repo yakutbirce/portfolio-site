@@ -35,11 +35,16 @@ function ProjectCard({
   <div className="flex flex-wrap gap-1.5 mt-auto">
     {tags.map((tag, index) => (
       <span
-        key={index}
-        className="px-2 py-0.5 text-xs font-medium tracking-tight leading-4 text-indigo-800 bg-white dark:bg-gray-700 border border-indigo-800 dark:border-indigo-400 rounded"
-      >
-        {tag}
-      </span>
+      key={index}
+      className="px-2 py-0.5 text-xs font-medium tracking-tight leading-4 
+                 text-indigo-800 dark:text-indigo-300 
+                 bg-white dark:bg-gray-700 
+                 border border-indigo-800 dark:border-indigo-400 
+                 rounded"
+    >
+      {tag}
+    </span>
+    
     ))}
   </div>
 
