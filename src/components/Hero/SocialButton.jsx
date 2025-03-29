@@ -6,9 +6,14 @@ function SocialButton({ type, label }) {
     linkedin: "https://cdn-icons-png.flaticon.com/512/174/174857.png",
   };
 
+  const links = {
+    github: "https://github.com/yakutbirce",
+    linkedin: "https://www.linkedin.com/in/birceyakut/",
+  };
+
   return (
     <a
-      href="#"
+      href={links[type] || "#"}
       className="px-6 py-3 border border-indigo-800 rounded-md flex items-center gap-3 hover:bg-indigo-50 transition"
       target="_blank"
       rel="noopener noreferrer"

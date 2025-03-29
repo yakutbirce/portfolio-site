@@ -48,7 +48,7 @@ function ContactModal() {
     setTimeout(() => {
       closeModal();
       navigate("/thanks");
-    }, 1500);
+    }, 3000);
   };
 
   const handleChange = (e) => {

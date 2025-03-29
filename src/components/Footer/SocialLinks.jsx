@@ -7,7 +7,7 @@ function SocialLinks() {
   const links = [
     {
       name: language === "tr" ? "Blog" : "Personal Blog",
-      url: "#",
+      url: "https://medium.com/@yakutbirce",
       base: "text-gray-950 dark:text-white",
       hover: "hover:text-indigo-600",
       icon: (
@@ -18,7 +18,7 @@ function SocialLinks() {
     },
     {
       name: "Github",
-      url: "#",
+      url: "https://github.com/yakutbirce",
       base: "text-emerald-600 dark:text-green-400",
       hover: "hover:text-emerald-700 dark:hover:text-green-500",
       icon: (
@@ -29,7 +29,7 @@ function SocialLinks() {
     },
     {
       name: "Linkedin",
-      url: "#",
+      url: "https://www.linkedin.com/in/birceyakut/",
       base: "text-sky-600 dark:text-blue-500",
       hover: "hover:text-sky-700 dark:hover:text-blue-400",
       icon: (
@@ -44,13 +44,16 @@ function SocialLinks() {
     <nav className="flex gap-5 max-md:mt-5 max-sm:flex-wrap max-sm:gap-4">
       {links.map((link, index) => (
         <a
-          key={index}
-          href={link.url}
-          className={`flex items-center gap-1 text-lg font-medium tracking-normal leading-7 ${link.base} ${link.hover} transition-all duration-300 hover:scale-[1.05] hover:underline max-sm:text-base`}
-        >
-          {link.icon}
-          {link.name}
-        </a>
+        key={index}
+        href={link.url}
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className={`flex items-center gap-1 text-lg font-medium tracking-normal leading-7 ${link.base} ${link.hover} transition-all duration-300 hover:scale-[1.05] hover:underline max-sm:text-base`}
+      >
+        {link.icon}
+        {link.name}
+      </a>
+      
       ))}
     </nav>
   );

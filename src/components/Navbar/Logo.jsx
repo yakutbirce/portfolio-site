@@ -20,7 +20,7 @@ function Logo() {
         viewBox="0 0 64 62"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-[40px] h-[38px]"
+        className="w-[36px] h-[34px]"
       >
         <ellipse cx="31.8378" cy="31" rx="31.8378" ry="31" fill="#EEEBFF" />
         <text
