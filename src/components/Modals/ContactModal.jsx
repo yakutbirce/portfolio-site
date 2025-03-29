@@ -7,6 +7,7 @@ import trData from "../../data/data.tr.json";
 import enData from "../../data/data.en.json";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import axios from "axios"; 
 
 function ContactModal() {
   const { isModalOpen, closeModal } = useModal();
@@ -21,15 +22,27 @@ function ContactModal() {
     reset,
   } = useForm();
 
-  const onSubmit = (data) => {
-    toast.success(dictionary.contactModal.success);
+  const onSubmit = async (data) => {
+    console.log("form verisi:", data);
+    try {
+    
+      await axios.post("https://reqres.in/api/workintech", data);
 
-    reset(); // Formu temizle
+      toast.success(dictionary.contactModal.success);
+      reset();
 
-    setTimeout(() => {
-      closeModal();
-      navigate("/thanks");
-    }, 3000);
+      setTimeout(() => {
+        closeModal();
+        navigate("/thanks");
+      }, 3000);
+    } catch (error) {
+      console.error("POST Error:", error);
+      toast.error(
+        language === "tr"
+          ? "Mesaj gönderilirken bir hata oluştu."
+          : "An error occurred while sending the message."
+      );
+    }
   };
 
   if (!isModalOpen) return null;
@@ -38,6 +51,7 @@ function ContactModal() {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-4">
       <ToastContainer />
       <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl w-full max-w-md relative transition-all duration-300 ease-in-out scale-100">
+
         <button
           onClick={closeModal}
           className="absolute top-4 right-4 text-gray-400 hover:text-indigo-600 transition-colors text-2xl"
@@ -63,9 +77,7 @@ function ContactModal() {
               {...register("name", { required: dictionary.contactModal.errors.name })}
               className={`p-3 border rounded-lg bg-white dark:bg-gray-800 ${errors.name ? "border-red-500" : ""}`}
             />
-            {errors.name && (
-              <p className="text-red-500 text-sm">{errors.name.message}</p>
-            )}
+            {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
           </div>
 
           {/* EMAIL */}
@@ -86,9 +98,7 @@ function ContactModal() {
               })}
               className={`p-3 border rounded-lg bg-white dark:bg-gray-800 ${errors.email ? "border-red-500" : ""}`}
             />
-            {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email.message}</p>
-            )}
+            {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
           </div>
 
           {/* MESSAGE */}
@@ -103,9 +113,7 @@ function ContactModal() {
               {...register("message", { required: dictionary.contactModal.errors.message })}
               className={`p-3 border rounded-lg bg-white dark:bg-gray-800 resize-none ${errors.message ? "border-red-500" : ""}`}
             />
-            {errors.message && (
-              <p className="text-red-500 text-sm">{errors.message.message}</p>
-            )}
+            {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
           </div>
 
           <button
