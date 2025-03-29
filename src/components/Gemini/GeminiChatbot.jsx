@@ -14,9 +14,8 @@ function GeminiChatbot() {
 
   // Başlangıç mesajı
   const introMessage = language === "tr"
-  ? "Merhaba! Ben frontend ve backend web geliştirme konularında yardımcı olan bir yapay zeka asistanıyım. Sor bakalım ne merak ediyorsun? 💻"
-  : "Hi! I'm an AI assistant focused on frontend and backend web development. What would you like to ask? 💻";
-
+    ? "Merhaba! Ben frontend ve backend web geliştirme konularında yardımcı olan bir yapay zeka asistanıyım. Sor bakalım ne merak ediyorsun? 💻"
+    : "Hi! I'm an AI assistant focused on frontend and backend web development. What would you like to ask? 💻";
 
   // İlk yüklemede intro mesajı
   useEffect(() => {
@@ -42,9 +41,8 @@ function GeminiChatbot() {
       const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
       const instruction = language === "tr"
-  ? `Sen sadece frontend ve backend web geliştirme konularında yardımcı olan bir yapay zeka asistanısın. Web geliştirme dışındaki konularda cevap vermezsin. Sorulara kısa, açıklayıcı, samimi ve motive edici cevaplar ver. Geliştiricinin özellikle HTML, CSS, JavaScript, React, Node.js ve diğer modern teknolojilerde çalıştığını belirtmekten çekinme. Gerektiğinde basit kod örnekleriyle açıklama yap.`
-  : `You are an AI assistant specialized only in frontend and backend web development. You do not answer questions unrelated to web development. Provide short, clear, friendly, and motivating answers. Do not hesitate to mention that the developer works with technologies like HTML, CSS, JavaScript, React, Node.js, and other modern tools. Provide simple code examples when needed.`;
-
+        ? `Sen sadece frontend ve backend web geliştirme konularında yardımcı olan bir yapay zeka asistanısın. Web geliştirme dışındaki konularda cevap vermezsin. Sorulara kısa, açıklayıcı, samimi ve motive edici cevaplar ver. Geliştiricinin özellikle HTML, CSS, JavaScript, React, Node.js ve diğer modern teknolojilerde çalıştığını belirtmekten çekinme. Gerektiğinde basit kod örnekleriyle açıklama yap.`
+        : `You are an AI assistant specialized only in frontend and backend web development. You do not answer questions unrelated to web development. Provide short, clear, friendly, and motivating answers. Do not hesitate to mention that the developer works with technologies like HTML, CSS, JavaScript, React, Node.js, and other modern tools. Provide simple code examples when needed.`;
 
       const result = await model.generateContent({
         contents: [{ role: "user", parts: [{ text: input }] }],
@@ -72,13 +70,13 @@ function GeminiChatbot() {
   };
 
   return (
-    <div className="fixed bottom-6 right-24 z-50">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-24 z-50">
 
       {/* Buton */}
       {!showChat && (
         <button
           onClick={() => setShowChat(true)}
-          className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full shadow-lg animate-bounce"
+          className="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-full shadow-lg animate-bounce text-sm sm:text-base"
         >
           💬
         </button>
@@ -86,16 +84,16 @@ function GeminiChatbot() {
 
       {/* Chat Kutusu */}
       {showChat && (
-        <div className="w-80 h-[450px] flex flex-col justify-between bg-white dark:bg-gray-900 text-black dark:text-white shadow-xl rounded-xl overflow-hidden animate-fade-in-up">
+        <div className="w-[90vw] max-w-[320px] h-[80vh] max-h-[450px] flex flex-col justify-between bg-white dark:bg-gray-900 text-black dark:text-white shadow-xl rounded-xl overflow-hidden animate-fade-in-up">
 
-          <div className="p-4 bg-indigo-600 text-white text-lg font-bold flex justify-between items-center">
+          <div className="p-3 sm:p-4 bg-indigo-600 text-white text-base sm:text-lg font-bold flex justify-between items-center">
             Gemini Chatbot
-            <button onClick={() => setShowChat(false)} className="text-white">
+            <button onClick={() => setShowChat(false)} className="text-white text-xl">
               ✕
             </button>
           </div>
 
-          <div className="flex-1 p-3 overflow-y-auto space-y-3 text-sm">
+          <div className="flex-1 p-3 overflow-y-auto space-y-2 text-sm">
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -121,7 +119,7 @@ function GeminiChatbot() {
           <div className="flex items-center p-2 border-t dark:border-gray-700 gap-2">
             <input
               type="text"
-              className="flex-1 p-2 rounded-lg border dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+              className="flex-1 p-2 rounded-lg border dark:border-gray-600 dark:bg-gray-800 dark:text-white text-sm"
               placeholder={language === "tr" ? "Bir şeyler yazın..." : "Type your question..."}
               value={input}
               onChange={(e) => setInput(e.target.value)}
@@ -129,7 +127,7 @@ function GeminiChatbot() {
             />
             <button
               onClick={handleSend}
-              className="bg-indigo-600 text-white px-3 py-1 rounded hover:bg-indigo-700"
+              className="bg-indigo-600 text-white px-2 py-1 rounded hover:bg-indigo-700 text-sm"
             >
               {language === "tr" ? "Gönder" : "Send"}
             </button>
