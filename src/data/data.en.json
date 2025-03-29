@@ -35,39 +35,39 @@
       "For me, building clean, effective and user-friendly interfaces is not just a job, it’s also an art."
     ]
   },
-  "projects": [
-    {
-      "title": "Workintech",
-      "description": "A site documenting my software education journey.",
-      "tags": ["React", "Tailwind", "Responsive"],
-      "image": "https://via.placeholder.com/300x180.png?text=Workintech",
-      "githubLink": "#",
-      "siteLink": "#"
-    },
-    {
-      "title": "Random Jokes",
-      "description": "A mini app that fetches random jokes from an API.",
-      "tags": ["HTML", "CSS", "JavaScript"],
-      "image": "https://via.placeholder.com/300x180.png?text=Random+Jokes",
-      "githubLink": "#",
-      "siteLink": "#"
-    },
-    {
-      "title": "Todo List",
-      "description": "A simple CRUD-based task management app.",
-      "tags": ["React", "Hooks", "LocalStorage"],
-      "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
-      "githubLink": "#",
-      "siteLink": "#"
-    },
-    {
-      "title": "Todo List",
-      "description": "A simple CRUD-based task management app.",
-      "tags": ["React", "Hooks", "LocalStorage"],
-      "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
-      "githubLink": "#",
-      "siteLink": "#"
-    }
+"projects": [
+  {
+    "title": "Burger Bonanza",
+    "description": "A restaurant website built with React, utilizing basic page transitions and component structure. It is responsive and provides a user-friendly interface, demonstrating fundamental front-end development skills.",
+    "tags": ["React", "React Router", "Responsive Design", "Component Based", "SPA"],
+   "image": "/images/BurgerBonanza.png",
+    "githubLink": "https://github.com/yakutbirce/react-restaurant",
+    "siteLink": "https://buger-bonanza.netlify.app/"
+  },
+  {
+    "title": "Flight Radar",
+    "description": "A simple application that displays flight information. Dynamically presents flight data fetched from an API to the user. The user interface is built with basic React component structure.",
+    "tags": ["React", "API", "Fetch", "Dynamic Data", "Component Based"],
+    "image": "images/flightradar.png",
+    "githubLink": "https://github.com/yakutbirce/FlightFlowHub",
+    "siteLink": "https://github.com/yakutbirce/FlightFlowHub"
+  },
+  {
+    "title": "Task Manager App",
+    "description": "A basic to-do list application with CRUD functionality. Users can add, edit, delete, and manage the status of tasks. Developed using React component structure and state management.",
+    "tags": ["React", "CRUD", "State Management", "Task Manager", "Component Based"],
+    "image": "/images/image.png",
+    "githubLink": "https://github.com/yakutbirce/task-manager-app",
+    "siteLink": "https://github.com/yakutbirce/task-manager-app"
+  },
+  {
+    "title": "VoyagerVerse",
+    "description": "Voyagerverse is an interactive information website built using only HTML, CSS, and JavaScript. It features a responsive design enriched with user-friendly animations. This project has won an award in a web design competition.",
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive Design", "Animations"]    ,
+    "image": "/images/voyagerverse.png",
+    "githubLink": "https://github.com/yakutbirce/voyagerverse",
+    "siteLink": "https://voyagerverse.netlify.app/"
+  }
   ],
   "footer": {
     "contact": "Let's work together on your next product.",

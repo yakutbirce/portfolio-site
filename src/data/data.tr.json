@@ -36,30 +36,38 @@
     ]
   },
   "projects": [
-    {
-      "title": "Workintech",
-      "description": "Yazılım eğitimi sürecimi belgelediğim site.",
-      "tags": ["React", "Tailwind", "Responsive"],
-      "image": "https://via.placeholder.com/300x180.png?text=Workintech",
-      "githubLink": "#",
-      "siteLink": "#"
-    },
-    {
-      "title": "Random Jokes",
-      "description": "API'den rastgele espriler çeken mini app.",
-      "tags": ["HTML", "CSS", "JavaScript"],
-      "image": "https://via.placeholder.com/300x180.png?text=Random+Jokes",
-      "githubLink": "#",
-      "siteLink": "#"
-    },
-    {
-      "title": "Todo List",
-      "description": "Yapılacaklar listesi uygulaması. CRUD işlemleriyle geliştirilmiştir.",
-      "tags": ["React", "Hooks", "LocalStorage"],
-      "image": "https://via.placeholder.com/300x180.png?text=Todo+List",
-      "githubLink": "#",
-      "siteLink": "#"
-    }
+  {
+    "title": "Burger Bonanza",
+    "description": "React ile geliştirilmiş, sayfa geçişleri ve bileşen yapısıyla hazırlanmış bir restoran web sitesi. Duyarlı yapısı ve kullanıcı dostu arayüzü ile temel front-end geliştirme becerilerini göstermektedir.",
+    "tags": ["React", "React Router", "Responsive Design", "Component Based", "SPA"],
+  "image": "/images/BurgerBonanza.png",
+    "githubLink": "https://github.com/yakutbirce/react-restaurant",
+    "siteLink": "https://buger-bonanza.netlify.app/"
+  },
+  {
+    "title": "Flight Radar",
+    "description": "Uçuş bilgilerini gösteren basit bir uygulama. Bir API'den alınan uçuş verilerini dinamik olarak kullanıcıya sunar. Kullanıcı arayüzü temel React bileşen yapısıyla oluşturulmuştur.",
+    "tags": ["React", "API", "Fetch", "Dynamic Data", "Component Based"]    ,
+    "image": "/images/flightradar.png",
+    "githubLink": "https://github.com/yakutbirce/FlightFlowHub",
+    "siteLink": "https://github.com/yakutbirce/FlightFlowHub"
+  },
+  {
+    "title": "Task Manager App",
+    "description": "CRUD işlevselliğine sahip temel bir yapılacaklar listesi uygulaması. Kullanıcılar görev ekleyebilir, düzenleyebilir, silebilir ve görev durumlarını yönetebilir. React bileşen yapısı ve state yönetimi kullanılarak geliştirilmiştir.",
+    "tags": ["React", "CRUD", "State Management", "Task Manager", "Component Based"],
+    "image": "/images/image.png", 
+    "githubLink": "https://github.com/yakutbirce/task-manager-app",
+    "siteLink": "https://github.com/yakutbirce/task-manager-app"
+  },
+  {
+    "title": "VoyagerVerse",
+    "description": "Voyagerverse, yalnızca HTML, CSS ve JavaScript kullanılarak geliştirilmiş, interaktif bir bilgi sitesi. Responsive tasarıma sahip ve kullanıcı dostu animasyonlarla zenginleştirilmiştir. Bu proje ile bir web tasarım yarışmasında ödül kazanılmıştır.",
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive Design", "Animations"],
+    "image": "/images/voyagerverse.png",
+    "githubLink": "https://github.com/yakutbirce/voyagerverse",
+    "siteLink": "https://voyagerverse.netlify.app/"
+  }
   ],
   "nav": {
     "skills": "Yetenekler",

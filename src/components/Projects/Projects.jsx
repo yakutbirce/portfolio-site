@@ -11,10 +11,9 @@ function Projects({ data }) {
 
   return (
     <section
-  id="projects"
-  className="scroll-mt-24 px-32 pt-0 pb-32 w-full max-md:px-16 max-md:pb-20 max-sm:px-5 max-sm:pb-16"
->
-
+      id="projects"
+      className="scroll-mt-24 px-32 pt-0 pb-32 w-full max-md:px-16 max-md:pb-20 max-sm:px-5 max-sm:pb-16"
+    >
       <div className="mt-[-48px]">
         <Divider />
       </div>
@@ -23,7 +22,8 @@ function Projects({ data }) {
         {dictionary.sections.projects}
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
+      {/* Düzenli 2x2 grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-10">
         {data.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

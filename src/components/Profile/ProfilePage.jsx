@@ -5,7 +5,9 @@ import AboutMe from "./AboutMe";
 
 function ProfilePage({ data }) {
   return (
-    <section className="px-32 pt-20 pb-32 w-full max-md:px-16 max-md:pt-12 max-sm:px-5 max-sm:pt-8 max-sm:pb-16">
+    <section id="profile" className="scroll-mt-24 px-32 pt-20 pb-32 w-full max-md:px-16 max-md:pt-12 max-sm:px-5 max-sm:pt-8 max-sm:pb-16">
+
+
       <ProfileHeader title={data?.profile?.title} />
 
       <div className="flex gap-14 max-md:flex-col max-md:gap-10">
