@@ -7,7 +7,7 @@ import trData from "../../data/data.tr.json";
 import enData from "../../data/data.en.json";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import axios from "axios"; 
+import axiosInstance from './../../api/axiosInstance';
 
 function ContactModal() {
   const { isModalOpen, closeModal } = useModal();
@@ -23,10 +23,10 @@ function ContactModal() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log("form verisi:", data);
+
     try {
     
-      await axios.post("https://reqres.in/api/workintech", data);
+      await axiosInstance.post("workintech", data);
 
       toast.success(dictionary.contactModal.success);
       reset();
