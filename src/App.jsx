@@ -43,14 +43,16 @@ function App() {
           {/* Ana Sayfa */}
           <Route path="/" element={
             <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
-              <div className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-sm px-32 py-4 flex flex-col gap-4">
+           <div className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-sm px-32 py-3 flex flex-col gap-2">
+
+
                 <div className="flex justify-end mr-2">
                   <HeaderActions />
                 </div>
                 <Navbar navData={data} />
               </div>
 
-              <div className="pt-[160px]">
+              <div className="pt-[160px] ">
                 <ProfileSection data={data} />
                 <Skills data={data.skills} />
                 <ProfilePage data={data} />
