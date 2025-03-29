@@ -3,7 +3,7 @@ import LanguageSwitch from "./LanguageSwitch";
 
 function HeaderActions() {
   return (
-    <header className="sticky top-0 z-50 flex gap-4 justify-end items-center px-6 py-2 w-full bg-white dark:bg-gray-900 transition-colors duration-300">
+    <header className="w-full flex flex-col sm:flex-row justify-center sm:justify-end items-center gap-2 sm:gap-4 px-4 sm:px-6 py-2 bg-white dark:bg-gray-900 transition-colors duration-300">
       <DarkModeToggle />
       <Separator />
       <LanguageSwitch />
@@ -12,7 +12,7 @@ function HeaderActions() {
 }
 
 function Separator() {
-  return <span className="text-xl font-bold text-gray-400 px-2">|</span>;
+  return <span className="hidden sm:inline-block text-xl font-bold text-gray-400 px-2">|</span>;
 }
 
 export default HeaderActions;
