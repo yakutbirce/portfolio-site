@@ -13,6 +13,8 @@ import { ModalProvider } from "./context/ModalContext";
 import Thanks from "./pages/Thanks"; 
 import { BrowserRouter as Router } from "react-router-dom";
 import ScrollllToTopButton from "./components/ScrollToTopButton";
+import GeminiChatbot from "./components/Gemini/GeminiChatbot";
+
 
 function App() {
   const { language } = useLanguage();
@@ -57,6 +59,7 @@ function App() {
               </div>
 
               <ContactModal />
+              <GeminiChatbot />
               <ScrollllToTopButton />
             </div>
           } />
