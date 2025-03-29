@@ -86,7 +86,7 @@ function GeminiChatbot() {
 
       {/* Chat Kutusu */}
       {showChat && (
-        <div className="w-80 h-[450px] flex flex-col justify-between bg-white dark:bg-gray-900 text-black dark:text-white shadow-xl rounded-xl overflow-hidden animate-fade-in-up">
+        <div className="w-80 h-[450px] max-sm:w-[90vw] max-sm:h-[400px] flex flex-col justify-between bg-white dark:bg-gray-900 text-black dark:text-white shadow-xl rounded-xl overflow-hidden animate-fade-in-up">
 
           <div className="p-4 bg-indigo-600 text-white text-lg font-bold flex justify-between items-center">
             Gemini Chatbot
