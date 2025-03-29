@@ -4,10 +4,19 @@ import Divider from "./Divider";
 import { useLanguage } from "../../context/LanguageContext";
 import trData from "../../data/data.tr.json";
 import enData from "../../data/data.en.json";
+import { useQuery } from "@tanstack/react-query";
 
-function Projects({ data }) {
+function Projects() {
   const { language } = useLanguage();
-  const dictionary = language === "tr" ? trData : enData;
+
+  // Query işlemi
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["projects", language],
+    queryFn: () => (language === "tr" ? trData.projects : enData.projects),
+  });
+
+  if (isLoading) return <p className="text-center text-indigo-500">Loading...</p>;
+  if (error) return <p className="text-center text-red-500">Bir hata oluştu...</p>;
 
   return (
     <section
@@ -19,10 +28,9 @@ function Projects({ data }) {
       </div>
 
       <h2 className="mb-20 text-5xl font-semibold leading-10 text-gray-800 dark:text-white max-md:mb-12 max-md:text-4xl max-sm:text-3xl">
-        {dictionary.sections.projects}
+        {language === "tr" ? trData.sections.projects : enData.sections.projects}
       </h2>
 
-      {/* Düzenli 2x2 grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-10">
         {data.map((project, index) => (
           <ProjectCard key={index} {...project} />
