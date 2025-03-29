@@ -70,7 +70,8 @@ function GeminiChatbot() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-24 z-50">
+    <div className="fixed bottom-4 right-4 sm:right-24 sm:bottom-6 max-sm:right-20 z-50">
+
 
       {/* Buton */}
       {!showChat && (
