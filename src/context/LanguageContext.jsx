@@ -1,6 +1,6 @@
 import { createContext, useContext, useReducer } from "react";
 
-// 1. Context oluşturuluyor
+// 1. Context oluştur
 const LanguageContext = createContext();
 
 // 2. Başlangıç durumu
@@ -22,7 +22,7 @@ function languageReducer(state, action) {
 }
 
 
-// 4. Provider bileşeni
+// 4. Provider
 export function LanguageProvider({ children }) {
   const [state, dispatch] = useReducer(languageReducer, initialState);
 

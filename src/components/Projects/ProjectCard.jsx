@@ -12,7 +12,7 @@ function ProjectCard({
   return (
     <article className="flex flex-col gap-3 w-full h-full p-3 bg-white dark:bg-gray-800 rounded-lg shadow-md transition-transform hover:scale-[1.015] max-w-[360px] mx-auto">
 
-  {/* Görsel Kutusu - daha küçük */}
+  {/* Görsel Kutusu*/}
   <div className="w-full aspect-[4/3] overflow-hidden rounded-md flex justify-center items-center bg-gray-100 dark:bg-gray-700">
       <img
           src={image}

@@ -12,7 +12,7 @@ function Logo() {
   return (
     <div 
       className="logo cursor-pointer" 
-      onClick={() => scrollToSection("profile")} // 💜 Hedef profile
+      onClick={() => scrollToSection("profile")} 
     >
      <svg
         width="52"

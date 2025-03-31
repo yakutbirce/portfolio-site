@@ -22,7 +22,7 @@ function DarkModeToggle() {
       onClick={toggleDarkMode}
       className="px-3 py-1 bg-indigo-100 dark:bg-indigo-800 text-indigo-800 dark:text-white rounded-full text-sm font-medium flex items-center gap-1 cursor-pointer transition-all duration-300 hover:scale-[1.03] hover:shadow-md hover:bg-indigo-200 dark:hover:bg-indigo-700"
     >
-      {/* İkonu burada dinamikleştirdik */}
+      
       <span role="img" aria-label={isDarkMode ? "sun" : "moon"}>
         {isDarkMode ? "🌞" : "🌙"}
       </span>

@@ -23,7 +23,7 @@ function ContactModal() {
   } = useForm();
 
   const onSubmit = async (data) => {
-
+console.log("Form Data:", data); 
     try {
     
       await axiosInstance.post("workintech", data);

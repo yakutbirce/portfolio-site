@@ -4,7 +4,7 @@ import { useModal } from "../../context/ModalContext";
 function NavLinks({ nav }) {
   const { openModal } = useModal();
 
-  // 🟣 Smooth scroll fonksiyonu
+  // Smooth scroll fonksiyonu
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {

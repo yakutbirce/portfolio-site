@@ -6,7 +6,7 @@ describe("Language Toggle Test", () => {
       cy.contains("Yetenekler").should("exist");
       cy.contains("ENGLISH").should("exist");
   
-      // Butona tıkla ➤ İngilizce olsun
+      // Butona tıkla İngilizce olsun
       cy.contains("ENGLISH").click();
   
       // Yeni içerik kontrolü (İngilizce)
@@ -14,7 +14,7 @@ describe("Language Toggle Test", () => {
       cy.contains("TÜRKÇE").should("exist");
       cy.contains("YE GEÇ").should("exist");
   
-      // Tekrar tıkla ➤ tekrar Türkçe
+      // Tekrar tıkla tekrar Türkçe
       cy.contains("TÜRKÇE").click();
   
       // Geri Türkçe içerik

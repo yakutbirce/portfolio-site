@@ -8,7 +8,7 @@ function GeminiChatbot() {
   const [showChat, setShowChat] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
-  const [isTyping, setIsTyping] = useState(false); // ✨ typing state
+  const [isTyping, setIsTyping] = useState(false); 
   const messagesEndRef = useRef(null);
   const { language } = useLanguage();
 
@@ -90,7 +90,7 @@ function GeminiChatbot() {
         <div className="w-80 h-[450px] flex flex-col justify-between bg-white dark:bg-gray-900 text-black dark:text-white shadow-xl rounded-xl overflow-hidden animate-fade-in-up">
 
           <div className="p-4 bg-indigo-600 text-white text-lg font-bold flex justify-between items-center">
-            Gemini Chatbot
+            Chatbot
             <button onClick={() => setShowChat(false)} className="text-white">
               ✕
             </button>

@@ -6,11 +6,11 @@ import "./index.css";
 import { ModalProvider } from "./context/ModalContext.jsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-const queryClient = new QueryClient(); // client'ımızı oluşturduk
+const queryClient = new QueryClient(); 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}> {/* query client sarmalayıcı */}
+    <QueryClientProvider client={queryClient}> 
       <LanguageProvider>
         <ModalProvider> 
           <App />

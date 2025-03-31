@@ -124,7 +124,7 @@
     "message": "Message is required"
   },
   "send": "Send Message",
-  "success": "Message sent successfully! 🚀"
+  "success": "Message sent successfully! "
 }
 
 }
